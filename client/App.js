@@ -46,24 +46,26 @@ import { Heading, useColorMode,Box, HStack, Avatar, Center, useColorModeValue, T
 
   );
 }
-export default () => {
-  const {toggleColorMode,colorMode} = useColorMode();
-  // const {banks} = useContext(DataContext)
-  const bgColor = colorMode === "dark" ? '#003F5E' : '#E3F2F9'
-  // const isDarkMode = colorMode === "dark"
-  const toggleSwitch = ()=>{
-    console.warn(colorMode)
-    toggleColorMode()
-  }
-  return (
-    <NativeBaseProvider>
-          <View style={{flex:1, backgroundColor:bgColor}} >
-          <App />
-          <Button title="Dark/light" onPress={()=>{
-          toggleColorMode()
-          console.warn(colorMode)
-          }} color="#3F72AF" />
-          </View>
-    </NativeBaseProvider>
-  );
-};
+export default App;
+
+// export default () => {
+//   const {toggleColorMode,colorMode} = useColorMode();
+//   // const {banks} = useContext(DataContext)
+//   const bgColor = colorMode === "dark" ? '#003F5E' : '#E3F2F9'
+//   // const isDarkMode = colorMode === "dark"
+//   const toggleSwitch = ()=>{
+//     console.warn(colorMode)
+//     toggleColorMode()
+//   }
+//   return (
+//     <NativeBaseProvider>
+//           <View style={{flex:1, backgroundColor:bgColor}} >
+//           <App />
+//           <Button title="Dark/light" onPress={()=>{
+//           toggleColorMode()
+//           console.warn(colorMode)
+//           }} color="#3F72AF" />
+//           </View>
+//     </NativeBaseProvider>
+//   );
+// };

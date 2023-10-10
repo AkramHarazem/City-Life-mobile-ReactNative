@@ -14,7 +14,7 @@ import { Heading, useColorMode, Button,Box, HStack, Avatar, Center, useColorMode
 export const DataContext = createContext();
 
 export default function Data(props) {
-  const baseUrl = "https://application-mock-server.loca.lt/";
+  const baseUrl = "https://vast-pink-wildebeest-belt.cyclic.app/";
 
     //Search Bar management
     const [All, setAll] = useState({})
@@ -64,7 +64,7 @@ export default function Data(props) {
       
 const AddUser = async (userData) => {
   try {
-    const response = await fetch("https://application-mock-server.loca.lt/users", {
+    const response = await fetch("https://vast-pink-wildebeest-belt.cyclic.app/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
